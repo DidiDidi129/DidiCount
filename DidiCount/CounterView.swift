@@ -13,15 +13,16 @@ struct CounterView: View {
 
     var body: some View {
         GroupBox {
-            VStack {
+            VStack(spacing: 8) { // Reduce spacing between text elements
                 Text(title)
                     .bold()
-                    .font(.system(size: 25))
+                    .font(.system(size: 18)) // Smaller font size for title
                 Text("\(count)")
                     .fontWeight(.bold)
-                    .font(.system(size: 50))
+                    .font(.system(size: 36)) // Smaller font size for count
             }
         }
-        .padding()
+        .padding(8) // Reduce padding for the GroupBox
+        .frame(width: 140, height: 140) // Set explicit width and height
     }
 }

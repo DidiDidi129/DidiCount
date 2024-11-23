@@ -28,15 +28,7 @@ struct ButtonView: View {
                             .foregroundStyle(.teal)
                             .font(.system(size: 30))
                     }
-                    Button(action: {
-                                    // Increment current, reset if it exceeds total
-                                    current = (current >= total) ? 1 : current + 1
-                                }) {
-                                    Image(systemName: "rectangle.2.swap")
-                                        .imageScale(.large)
-                                        .foregroundStyle(.indigo)
-                                        .font(.system(size: 30))
-                                }
+                    
                 }
             }
             
