@@ -14,11 +14,10 @@ struct ContentView: View {
             Spacer()
 
             // Display Counter 1 or Counter 2 based on the current value
-            if current == 1 {
-                CounterView(title: "Counter 1", count: $number1)
-            } else if current == 2 {
-                CounterView(title: "Counter 2", count: $number2)
-            }
+            CounterView(title: "Counter 1", count: $number1)
+            CounterView(title: "Counter 2", count: $number2)
+            CurrentView(current: $current)
+
 
             Spacer()
             
